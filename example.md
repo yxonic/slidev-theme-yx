@@ -118,6 +118,8 @@ sequenceDiagram
 layout: two-cols
 ---
 
+# Two Columns
+
 ```mermaid
 sequenceDiagram
   Alice->John: Hello John, how are you?
