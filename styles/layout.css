@@ -1,0 +1,62 @@
+:root {
+  // default theme color
+  // can be overrided by uses `themeConfig` option
+  --slidev-theme-primary: #818cf8;
+}
+
+.slidev-layout {
+  h1 {
+    @apply font-bold text-2xl mb-8;
+  }
+
+  h2 {
+    @apply font-bold text-xl mb-3;
+  }
+
+  ul, ol {
+    @apply space-y-3 mb-8;
+    list-style: disc;
+  }
+
+  a {
+    @apply border-solid border-b-1 border-gray-500;
+  }
+
+  strong a {
+    @apply border-b-4 border-indigo-400 border-opacity-90;
+  }
+
+  .mermaid {
+    @apply flex items-center py-4 rounded-lg dark:bg-white dark:opacity-90;
+  }
+
+  .mermaid svg {
+    @apply mx-auto;
+  }
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  @apply h-full grid;
+
+  h1 {
+    @apply font-bold text-4xl;
+  }
+
+  p {
+    @apply text-xl text-gray-700 dark:text-gray-300;
+  }
+}
+
+.slidev-layout.tight {
+  ul, ol {
+    @apply space-y-0;
+    list-style: disc;
+  }
+}
+
+.slidev-layout.two-cols {
+  h1 {
+    @apply col-span-2;
+  }
+}
