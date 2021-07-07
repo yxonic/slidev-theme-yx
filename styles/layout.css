@@ -15,7 +15,26 @@
 
   ul, ol {
     @apply space-y-3 mb-8;
+  }
+
+  ul {
     list-style: disc;
+  }
+
+  ul ul {
+    list-style: circle;
+  }
+
+  ol ul {
+    list-style: circle;
+  }
+
+  ul ul, ol {
+    @apply space-y-0 mb-4;
+  }
+
+  ol ul, ol {
+    @apply space-y-0 mb-4;
   }
 
   a {
